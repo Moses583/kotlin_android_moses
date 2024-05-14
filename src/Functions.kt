@@ -6,7 +6,10 @@ fun main(){
     printShit("Jackshit")
     val ans1 = doMath(23.0,46.0)
     println(ans1)
-
+    val ans2 = doFactorial(5)
+    println(ans2)
+    val ans3 = factorialTwo(5,10)
+    println(ans3)
 
 }
 //function without arguments
@@ -23,3 +26,18 @@ fun printShit(string: String){
 
 //function with multiple arguments and return type
 fun doMath(a: Double,b: Double): Double = a.div(b)
+
+//recursive function to find factorials
+fun doFactorial(num: Int): Long{
+    return if(num == 1) num.toLong() else num * doFactorial(num - 1)
+}
+
+//tail recursion
+fun factorialTwo(num: Int, x:Int):Long{
+
+    return if(num==1)   // terminate condition
+        x.toLong()
+    else
+        factorialTwo(num-1,x*num)   //tail recursion
+}
+
