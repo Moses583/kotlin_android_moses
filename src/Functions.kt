@@ -11,6 +11,13 @@ fun main(){
     val ans3 = factorialTwo(5,10)
     println(ans3)
 
+    //anonymous functions
+    val myFunction = { printShit("Noshit")}
+    myFunction()
+    myFunction.invoke()
+
+
+
 }
 //function without arguments
 fun printTrash(){
