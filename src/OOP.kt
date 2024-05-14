@@ -9,6 +9,7 @@ fun main(){
     person1.fart("beans")
 
 }
+//class without constructor
 class Person{
     var name:String = ""
     var age:Int = 0
