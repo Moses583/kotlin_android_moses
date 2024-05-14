@@ -4,7 +4,7 @@ fun main(){
     printShit("Horseshit")
     printShit("Bullshit")
     printShit("Jackshit")
-    val ans1 = doMath(23)
+    val ans1 = doMath(23.0,46.0)
     println(ans1)
 
 
@@ -21,5 +21,5 @@ fun printShit(string: String){
     println("this is the shit to be printed: $string")
 }
 
-//function with arguments and return type
-fun doMath(int: Int): Double = int + Math.random()
+//function with multiple arguments and return type
+fun doMath(a: Double,b: Double): Double = a.div(b)
