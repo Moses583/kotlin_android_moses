@@ -62,7 +62,7 @@ fun main() {
     val myHashMap:  HashMap<Int,Char> = HashMap()
     for (s in 1..10){
         for (c in 'a'..'j'){
-            myHashMap.put(s,c)
+            myHashMap[s] = c
         }
     }
     println(myHashMap)
