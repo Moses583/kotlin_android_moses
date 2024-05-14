@@ -16,7 +16,7 @@ fun main(){
     println(car1.speed(4))
 
     //object of class Vehicle
-     val car2 = Vehicle()
+    val car2 = Vehicle()
     car2.brand="BMW"
     car2.classCat = "Sedan"
     car2.getCar()
