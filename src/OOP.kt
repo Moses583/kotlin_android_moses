@@ -15,7 +15,15 @@ fun main(){
     car1.drive()
     println(car1.speed(4))
 
-
+    //object of class Vehicle
+     val car2 = Vehicle()
+    car2.brand="BMW"
+    car2.classCat = "Sedan"
+    car2.getCar()
+    val engine = car2.Engine()
+    engine.type = "V8"
+    engine.power = 625
+    engine.getEngine()
 
 }
 //class without constructor
