@@ -40,4 +40,32 @@ fun main() {
         println(s)
     }
 
+    //arrayList
+    val myArrayList = ArrayList<Int>()
+    for (s in 1..10){
+        myArrayList.add(s)
+    }
+    for (t in myArrayList){
+        println(t)
+    }
+
+    //hashSet
+    val myHashSet = hashSetOf(1,2,3,4)
+    println(myHashSet)
+    myHashSet.add(12)
+    println(myHashSet)
+    myHashSet.remove(2)
+    println(myHashSet)
+
+    //hashMap
+
+    val myHashMap:  HashMap<Int,Char> = HashMap()
+    for (s in 1..10){
+        for (c in 'a'..'j'){
+            myHashMap.put(s,c)
+        }
+    }
+    println(myHashMap)
+
+
 }
