@@ -31,6 +31,10 @@ fun main(){
     comp1.name = "Airtel PLC"
     println(comp1.name)
 
+    val funny = MyInter()
+    funny.start()
+    funny.stop()
+
 }
 //class without constructor
 class Person{
@@ -52,11 +56,29 @@ class Person{
 
 }
 //class with constructor
-class Car(brand:String,model:String,yearOfMan:Int){
+class Car(brand:String,model:String,yearOfMan:Int): MyInterface{
     fun drive(){
         println("Vrooom")
     }
     fun speed(gear:Int):Int{
         return gear.times(3+43)
     }
+
+    override fun start() {
+        println("Start car")
+    }
+
+    override fun stop() {
+        println("Stop car")
+    }
+}
+class MyInter: MyInterface{
+    override fun start() {
+        println("staring fun")
+    }
+
+    override fun stop() {
+        println("stopping fun")
+    }
+
 }
