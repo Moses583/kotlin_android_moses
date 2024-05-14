@@ -9,6 +9,7 @@ fun main(){
     person1.laugh()
     person1.eat("spaghetti")
     person1.eat("beans")
+    println(person1.name)
 
     //object of type Car
     val car1 = Car("BWM","5 Series",2021)
@@ -24,6 +25,11 @@ fun main(){
     engine.type = "V8"
     engine.power = 625
     engine.getEngine()
+
+    //object of class company with getters and setters
+    val comp1 = Company()
+    comp1.name = "Airtel PLC"
+    println(comp1.name)
 
 }
 //class without constructor
