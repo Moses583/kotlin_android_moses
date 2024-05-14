@@ -1,6 +1,6 @@
 fun main(){
     println("Hello world")
-    printTrash()
+
     printShit("Horseshit")
     printShit("Bullshit")
     printShit("Jackshit")
