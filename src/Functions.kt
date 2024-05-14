@@ -16,6 +16,10 @@ fun main(){
     myFunction()
     myFunction.invoke()
 
+    //lambda expressions
+    val product = {a:Int,b:Int->a.times(b)}
+    println(product(109,2))
+
 
 
 }
@@ -47,4 +51,7 @@ fun factorialTwo(num: Int, x:Int):Long{
     else
         factorialTwo(num-1,x*num)   //tail recursion
 }
+
+
+
 
